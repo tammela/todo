@@ -2,6 +2,8 @@
 
 The stupid todo pile manager.
 
+![Example](./example.png)
+
 Yes, it supports emojis.
 
 ## Usage
