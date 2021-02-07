@@ -125,7 +125,7 @@ function cmd_push()
    end
    local o = {
       priority = args.priority,
-      tag = tag and string.upper(args.tag) or "",
+      tag = args.tag and string.upper(args.tag) or "",
       message = args.message
    }
    ft_insert(rapidjson.object(o))
@@ -146,7 +146,7 @@ function cmd_pop()
          a, b = b, a
       end
       for i = a, b do
-         table.remove(ft, 1)
+         table.remove(ft, a)
       end
    else
       table.remove(ft, args.line)
